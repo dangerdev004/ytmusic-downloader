@@ -6,7 +6,7 @@ then
  read playname
  mkdir ~/Music/sources
  mkdir ~/Music/sources/"$playname"
- yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P /sdcard/Music/sources/"$playname" -o "%(video_autonumber)s-%(title)s.%(ext)s".mp3 $link
+ yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P ~/Music/sources/"$playname" -o "%(video_autonumber)s-%(title)s.%(ext)s".mp3 $link
  cd ~/Music/sources/"$playname"
  ls -1v | grep .mp3 > "$playname".m3u 
  mkdir ~/Music/"$playname"
@@ -17,5 +17,5 @@ cp *.mp3 ~/Music/"$playname"
  else 
  echo "Enter the name of the song: "
  read name
- yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P /sdcard/Music -o "$name".mp3 "$link"
+ yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P ~/Music -o "$name".mp3 "$link"
  fi
