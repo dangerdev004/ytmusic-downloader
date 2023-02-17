@@ -1,5 +1,5 @@
 # ytmusic-downloader
-Download Music from youtube with metadata
+Download Music from "YouTube Music" with metadata
 1. Download the script
 2. Give permissions
      <p><dir="auto"><code> sudo chmod +x ./musicdownloader.sh </code></p>
@@ -7,5 +7,7 @@ Download Music from youtube with metadata
      <p><dir="auto"><code>./musicdownloader.sh</code></p>
 4. Enter the link of song or playlist you want to download
 6. Enjoy the music.
- 
-Disclaimer: The content downloaded using this script is subject to copyright/ownership/trademark laws of the creator/publisher of the content.
+
+ Disclaimer: The content downloaded using this script is subject to copyright/ownership/trademark laws of the creator/publisher of the content.
+
+Note: It is advised to use music.youtube.com for better covers but this is not compulsory.
