@@ -1,8 +1,11 @@
 # ytmusic-downloader
 Download Music from "YouTube Music" with metadata
 1. Download the script
+ 1.1 Install Termux on Android
+ 1.2 Use F droid
+ <p> https://f-droid.org/ </p> 
 2. Give permissions
-     <p><dir="auto"><code> sudo chmod +x ./musicdownloader.sh </code></p>
+     <p><dir="auto"><code> chmod +x ./musicdownloader.sh </code></p>
 3. Run the script
      <p><dir="auto"><code>./musicdownloader.sh</code></p>
 4. Enter the link of song or playlist you want to download
