@@ -2,7 +2,7 @@
 Download Music from "YouTube Music" with metadata
 1. Download the script
 2. Download Termux from Fdroid
-   <p><dir="auto"> https://https://f-droid.org/ </p>
+   <p><dir="auto"> https://f-droid.org/ </p>
 3. Install git using 
    <p><dir="auto"> pkg install git </p>
 4. Give permissions
