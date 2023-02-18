@@ -8,6 +8,13 @@ Download Music from "YouTube Music" with metadata
 4. Enter the link of song or playlist you want to download
 6. Enjoy the music.
 
- Disclaimer: The content downloaded using this script is subject to copyright/ownership/trademark laws of the creator/publisher of the content.
+## Additional Steps for Android
+1. Download Termux from Fdroid
+      <p><dir="auto">https://f-droid.org/</p>
+2. Install git using
+      <p><dir="auto"><code>pkg install git </code></p>
+   
+
+Disclaimer: The content downloaded using this script is subject to copyright/ownership/trademark laws of the creator/publisher of the content.
 
 Note: It is advised to use music.youtube.com for better covers but this is not compulsory.
