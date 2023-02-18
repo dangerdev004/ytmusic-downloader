@@ -13,8 +13,8 @@ Download Music from "YouTube Music" with metadata
       <p><dir="auto">https://f-droid.org/en/packages/com.termux/</p>
 2. Install git using
       <p><dir="auto"><code>pkg install git </code></p>
+3. Use <code>**musicandroid.sh**</code> script for android
+
    
-
 Disclaimer: The content downloaded using this script is subject to copyright/ownership/trademark laws of the creator/publisher of the content.
-
-Note: It is advised to use music.youtube.com for better covers but this is not compulsory.
+### Note: It is advised to use music.youtube.com for better covers but this is not compulsory.
