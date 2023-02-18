@@ -10,7 +10,7 @@ Download Music from "YouTube Music" with metadata
 
 ## Additional Steps for Android
 1. Download Termux from Fdroid
-      <p><dir="auto">https://f-droid.org/</p>
+      <p><dir="auto">https://f-droid.org/en/packages/com.termux/</p>
 2. Install git using
       <p><dir="auto"><code>pkg install git </code></p>
    
