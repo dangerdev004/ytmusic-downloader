@@ -16,5 +16,5 @@ Download Music from "YouTube Music" with metadata
 3. Use <code>**musicandroid.sh**</code> script for android
 
    
-Disclaimer: The content downloaded using this script is subject to copyright/ownership/trademark laws of the creator/publisher of the content.
+##Disclaimer: The content downloaded using this script is subject to copyright/ownership/trademark laws of the creator/publisher of the content.
 ### Note: It is advised to use music.youtube.com for better covers but this is not compulsory.
