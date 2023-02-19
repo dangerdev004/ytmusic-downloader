@@ -26,3 +26,4 @@ cd
 else 
 yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P ~/Music -o "%(title)s.%(ext)s" "$link"
 fi
+fi
