@@ -21,4 +21,6 @@ This project and its contents are not affiliated with, funded, authorized, endor
 
 Any trademark, service mark, trade name, or other intellectual property rights used in this project are owned by the respective owners.
 
+### Read the wiki if you are having problems on Android
+
 #### Note: It is advised to use music.youtube.com for better covers but this is not compulsory.
