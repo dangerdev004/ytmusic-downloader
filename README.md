@@ -13,7 +13,9 @@ Download Music from "YouTube Music" with metadata
       <p><dir="auto">https://f-droid.org/en/packages/com.termux/</p>
 2. Install git using
       <p><dir="auto"><code>pkg install git ffmpeg python</code></p>
-3. Use <code>**musicandroid.sh**</code> script for android
+3. Install yt-dlp
+      <p><dir="auto"><code>pip install yt-dlp</code></p>  
+4. Use <code>**musicandroid.sh**</code> script for android
 
    
 ## Disclaimer
