@@ -15,8 +15,7 @@ Download Music from "YouTube Music" with metadata
       <p><dir="auto"><code>pkg install git ffmpeg python</code></p>
 3. Install yt-dlp
       <p><dir="auto"><code>pip install yt-dlp</code></p>  
-4. Use <code>**musicandroid.sh**</code> script for android
-
+4. Then run the script as normal.
    
 ## Disclaimer
 This project and its contents are not affiliated with, funded, authorized, endorsed by, or in any way associated with YouTube, Google LLC or any of its affiliates and subsidiaries.
