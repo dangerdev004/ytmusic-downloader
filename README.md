@@ -42,4 +42,6 @@ Any trademark, service mark, trade name, or other intellectual property rights u
 
 ### Read the wiki if you are having problems on Android
 
+### This is a personal project please be patient if any issue arises.
+
 #### Note: It is advised to use music.youtube.com for better covers but this is not compulsory.
