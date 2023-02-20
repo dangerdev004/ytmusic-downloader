@@ -23,6 +23,14 @@ This project and its contents are not affiliated with, funded, authorized, endor
 
 Any trademark, service mark, trade name, or other intellectual property rights used in this project are owned by the respective owners.
 
-### Read the wiki if you are having problems on Android
+### How to run shell scripts on windows 
+There are plenty of ways to do so but the best way is git bash.
+1. Download **Git Bash** from the link above
+2. Open Git Bash
+3. Clone the repo in the folder. User specific folder is recommended for ease of use. You can also download zip and extract it.
+4. Go to git bash and run the script as normally (Read README)
+## Read the wiki if you are having problems on Android
 
 #### Note: It is advised to use music.youtube.com for better covers but this is not compulsory.
+
+#### This is a personal project please be patient if any issue arises.
