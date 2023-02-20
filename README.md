@@ -9,8 +9,7 @@ Download Music from "YouTube Music" with metadata
 6. Enjoy the music.
 
 ## Additional Steps for Android
-1. Download Termux from Fdroid
-      <p><dir="auto">https://f-droid.org/en/packages/com.termux/</p>
+1. **[Download Termux from Fdroid](https://f-droid.org/en/packages/com.termux/)**
 2. Install git using
       <p><dir="auto"><code>pkg install git ffmpeg python</code></p>
 3. Install yt-dlp
@@ -18,12 +17,9 @@ Download Music from "YouTube Music" with metadata
 4. Then run the script as normal.
    
 ## Steps for Windows
-1. Download Git Bash from 
-      <p><dir="auto">https://git-scm.com/downloads</p>
-2. Download yt-dlp from 
-      <p><dir="auto">https://github.com/yt-dlp/yt-dlp#installation</p>
-3. Download ffmpeg from
-      <p><dir="auto">http://ffmpeg.org/download.html</p>
+1. **[Download Git Bash](https://git-scm.com/downloads)**
+2. **[Download yt-dlp](https://github.com/yt-dlp/yt-dlp#installation)**
+3. **[Download ffmpeg](http://ffmpeg.org/download.html)**
 4. Clone this repo or download zip 
       <p><dir="auto"><code>git clone https://github.com/dangerdev004/ytmusic-downloader.git</code></p>
 5. Run <code>**musicdownloader.sh**</code> in git bash
@@ -31,7 +27,7 @@ Download Music from "YouTube Music" with metadata
 #### Note: You can download all these packages using winget as well.
 
 ## Steps for MacOS
-1. [Install Homebrew](https://brew.sh/)
+1. **[Install Homebrew](https://brew.sh/)**
 2. Install yt-dlp,ffmpeg,git using
    <p><code>brew install yt-dlp ffmpeg git</code>
 3. Clone the repo and run the script in terminal as normal
