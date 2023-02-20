@@ -31,8 +31,10 @@ Download Music from "YouTube Music" with metadata
 #### Note: You can download all these packages using winget as well.
 
 ## Steps for MacOS
-1. Install yt-dlp and ffmpeg from the links above
-2. Clone the repo and run the script in terminal as normal
+1. [Install Homebrew](https://brew.sh/)
+2. Install yt-dlp,ffmpeg,git using
+   <p><code>brew install yt-dlp ffmpeg git</code>
+3. Clone the repo and run the script in terminal as normal
 #### Note: You can download the packages using brew/homebrew as well.
 
 ## Disclaimer
