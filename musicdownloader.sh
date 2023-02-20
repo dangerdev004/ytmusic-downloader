@@ -1,5 +1,5 @@
 #!/bin/sh
-if command termux-reload-settings 
+if command termux-reload-settings >/dev/null 2>&1
 then  
 echo "Enter the youtube link of the song or playlist: "
 read link
