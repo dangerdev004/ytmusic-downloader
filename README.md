@@ -1,36 +1,45 @@
 # ytmusic-downloader
 Download Music from "YouTube Music" with metadata
 1. Download the script
-2. Install python,yt-dlp,ffmpeg
-3. Run the script using
-   <p><dir="auto"><code>python musicdownloader.py</code></p>
-4. For install instructions read the wiki
+2. Give permissions
+     <p><dir="auto"><code> sudo chmod +x ./musicdownloader.sh </code></p>
+3. Run the script
+     <p><dir="auto"><code>./musicdownloader.sh</code></p>
+4. Enter the link of song or playlist you want to download
+6. Enjoy the music.
 
-# Features
-1. Can download music from youtube,youtube-music
-2. Can download playlists
-3. Will download metadata
-4. Will download square cover image and embed it in the mp3 file
-5. Will download all the songs in a playlist in a seperate folder in default Music folder
+## Additional Steps for Android
+1. Download Termux from Fdroid
+      <p><dir="auto">https://f-droid.org/en/packages/com.termux/</p>
+2. Install git using
+      <p><dir="auto"><code>pkg install git ffmpeg python</code></p>
+3. Install yt-dlp
+      <p><dir="auto"><code>pip install yt-dlp</code></p>  
+4. Then run the script as normal.
+   
+## Steps for Windows
+1. Download Git Bash from 
+      <p><dir="auto">https://git-scm.com/downloads</p>
+2. Download yt-dlp from 
+      <p><dir="auto">https://github.com/yt-dlp/yt-dlp#installation</p>
+3. Download ffmpeg from
+      <p><dir="auto">http://ffmpeg.org/download.html</p>
+4. Clone this repo or download zip 
+      <p><dir="auto"><code>git clone https://github.com/dangerdev004/ytmusic-downloader.git</code></p>
+5. Run <code>**musicdownloader.sh**</code> in git bash
 
-# Planned Features
-1. Trying to download private playlists
-2. Trying to sync the playlists
-3. Giving the option of different folder, codecs,bitrate and quality
+#### Note: You can download all these packages using winget as well.
+
+## Steps for MacOS
+1. Install yt-dlp and ffmpeg from the links above
+2. Clone the repo and run the script in terminal as normal
+#### Note: You can download the packages using brew/homebrew as well.
 
 ## Disclaimer
 This project and its contents are not affiliated with, funded, authorized, endorsed by, or in any way associated with YouTube, Google LLC or any of its affiliates and subsidiaries.
 
 Any trademark, service mark, trade name, or other intellectual property rights used in this project are owned by the respective owners.
 
-### How to run shell scripts on windows 
-There are plenty of ways to do so but the best way is git bash.
-1. Download **Git Bash** from the link above
-2. Open Git Bash
-3. Clone the repo in the folder. User specific folder is recommended for ease of use. You can also download zip and extract it.
-4. Go to git bash and run the script as normally (Read README)
-## Read the wiki if you are having problems on Android
+### Read the wiki if you are having problems on Android
 
 #### Note: It is advised to use music.youtube.com for better covers but this is not compulsory.
-
-#### This is a personal project please be patient if any issue arises.
