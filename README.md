@@ -31,7 +31,7 @@ Download Music from "YouTube Music" with metadata
 2. Install yt-dlp,ffmpeg,git using
    <p><code>brew install yt-dlp ffmpeg git</code>
 3. Clone the repo and run the script in terminal as normal
-#### Note: You can download the packages using brew/homebrew as well.
+#### Note: You can download these Packages manually as well.
 
 ## Disclaimer
 This project and its contents are not affiliated with, funded, authorized, endorsed by, or in any way associated with YouTube, Google LLC or any of its affiliates and subsidiaries.
