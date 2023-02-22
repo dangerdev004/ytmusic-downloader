@@ -17,7 +17,7 @@ Download Music from "YouTube Music" with metadata
 4. Then run the script as normal.
    
 ## Steps for Windows
-1. **[Download Git Bash](https://git-scm.com/downloads)**
+1. **[Download Git](https://git-scm.com/downloads)**
 2. **[Download yt-dlp](https://github.com/yt-dlp/yt-dlp#installation)**
 3. **[Download ffmpeg](http://ffmpeg.org/download.html)**
 4. Clone this repo or download zip 
