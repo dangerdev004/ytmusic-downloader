@@ -38,7 +38,7 @@ This project and its contents are not affiliated with, funded, authorized, endor
 
 Any trademark, service mark, trade name, or other intellectual property rights used in this project are owned by the respective owners.
 
-### Read the wiki if you are having problems on Android
+### Read the wiki if you are having problems
 
 ### This is a personal project please be patient if any issue arises.
 
