@@ -1,7 +1,8 @@
 #!/bin/sh
 if command termux-reload-settings >/dev/null 2>&1
-then  
-echo "Enter the youtube link of the song or playlist: "
+then 
+read -n 1000000 -t 0.001 
+echo -e "Enter the youtube link of the song or playlist:\n "
 read link
 if grep -q "playlist"  <<< "$link" ;
 then
@@ -14,7 +15,8 @@ else
 yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P /sdcard/Music -o "%(title)s.%(ext)s" "$link"
 fi
 else
-echo "Enter the youtube link of the song or playlist: "
+read -n 1000000 -t 0.001
+echo -e "Enter the youtube link of the song or playlist:\n "
 read link
 if grep -q "playlist"  <<< "$link" ;
 then
