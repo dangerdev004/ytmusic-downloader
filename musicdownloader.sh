@@ -27,14 +27,10 @@ if command termux-reload-settings >/dev/null 2>&1
 
 # Playlist (Android)
 
-     yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P /sdcard/Music -o '%(playlist_title)s/%(video_autonumber)s-%(title)s.%(ext)s' "$link"
-     output=$(yt-dlp --get-filename -o '%(playlist_title)s' --playlist-start 1 --playlist-end 1 "$link")
-      cd /sdcard/Music/"$output"
+     yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P /sdcard/Music -o '%(playlist_title)s/%(title)s.%(ext)s' --exec 'echo "%(title)s.%(ext)s" >> /sdcard/Music/"%(playlist_title)s"/"%(playlist_title)s.m3u"' "$link"
 
 # Read yt-dlp documantation for more info
 
-      ls -1v | grep .mp3 > "$output".m3u
-      cd
    else
 
 # Single (Android)
@@ -53,11 +49,7 @@ else
 
   if grep -q "playlist"  <<< "$link" ;
    then
-    yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P ~/Music -o '%(playlist_title)s/%(video_autonumber)s-%(title)s.%(ext)s' "$link"
-    output=$(yt-dlp --get-filename -o '%(playlist_title)s' --playlist-start 1 --playlist-end 1 "$link")
-     cd ~/Music/"$output"
-     ls -1v | grep .mp3 > "$output".m3u
-     cd
+    yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P ~/Music -o '%(playlist_title)s/%(title)s.%(ext)s' --exec 'echo -e "%(title)s.%(ext)s" >> ~/Music/"%(playlist_title)s"/"%(playlist_title)s.m3u"' "$link"
   else
 
 # Single
@@ -66,4 +58,4 @@ else
   fi
 fi
 
-echo -e "For more information checkout: https://github.com/dangerdev004/ytmusic-downloader/#readme"
+echo -e "${GREEN}\nFor more information checkout: https://github.com/dangerdev004/ytmusic-downloader/#readme${NC}"
