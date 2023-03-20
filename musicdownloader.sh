@@ -27,7 +27,7 @@ if command termux-reload-settings >/dev/null 2>&1
 
 # Playlist (Android)
 
-     yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P /sdcard/Music -o '%(playlist_title)s/%(title)s.%(ext)s' --exec 'echo "%(title)s.%(ext)s" >> /sdcard/Music/"%(playlist_title)s"/"%(playlist_title)s.m3u"' "$link"
+     yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P /sdcard/Music -o '%(playlist_title)s/%(title)s-%(id)s.%(ext)s' --exec 'echo "%(title)s-%(id)s.%(ext)s" >> /sdcard/Music/"%(playlist_title)s"/"%(playlist_title)s.m3u"' "$link"
 
 # Read yt-dlp documantation for more info
 
@@ -35,7 +35,7 @@ if command termux-reload-settings >/dev/null 2>&1
 
 # Single (Android)
 
-    yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P /sdcard/Music -o "%(title)s.%(ext)s" "$link"
+    yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P /sdcard/Music -o "%(title)s-%(id)s.%(ext)s" "$link"
    fi
 else
 
@@ -49,12 +49,12 @@ else
 
   if grep -q "playlist"  <<< "$link" ;
    then
-    yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P ~/Music -o '%(playlist_title)s/%(title)s.%(ext)s' --exec 'echo -e "%(title)s.%(ext)s" >> ~/Music/"%(playlist_title)s"/"%(playlist_title)s.m3u"' "$link"
+    yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P ~/Music -o '%(playlist_title)s/%(title)s-%(id)s.%(ext)s' --exec 'echo -e "%(title)s-%(id)s.%(ext)s" >> ~/Music/"%(playlist_title)s"/"%(playlist_title)s.m3u"' "$link"
   else
 
 # Single
 
-   yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P ~/Music -o "%(title)s.%(ext)s" "$link"
+   yt-dlp -x -f bestaudio --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata --ppa "EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'if(gt(ih,iw),iw,ih)':'if(gt(iw,ih),ih,iw)'\"" -P ~/Music -o "%(title)s-%(id)s.%(ext)s" "$link"
   fi
 fi
 
